@@ -17,7 +17,7 @@
   "hero": {
     "eyebrow": "Elías Calles · Baja California Sur",
     "title": "Where the desert meets the Pacific",
-    "subtitle": "Private lots on Mexico's last quiet coast — halfway between Los Cabos and La Paz, minutes from Todos Santos.",
+    "subtitle": "Private lots on Mexico's last quiet coast — 30 minutes from Cabo San Lucas, minutes from Todos Santos.",
     "cta": "Explore the lots",
     "secondaryCta": "Request information",
     "scrollHint": "Scroll"
@@ -26,17 +26,17 @@
     "eyebrow": "The Location",
     "title": "The unhurried side of Baja",
     "lead": "Lomas del Pacífico rests on the Pacific slope of Baja California Sur, in Elías Calles — a name whispered among surfers and those who arrived in Todos Santos before the world did.",
-    "body1": "Federal Highway 19 traces the coast at your doorstep: forty minutes south lie the marinas and flights of Los Cabos; an hour north, the colonial calm of La Paz. In between — nothing but ocean light, organic farms and some of the finest surf breaks on the peninsula.",
+    "body1": "Federal Highway 19 traces the coast at your doorstep: thirty minutes south lie the marinas and flights of Los Cabos; an hour north, the colonial calm of La Paz. In between — nothing but ocean light, organic farms and some of the finest surf breaks on the peninsula.",
     "body2": "This is a coast of long horizons and longer evenings. Whales pass close to shore in winter. The desert blooms after summer rain. And the land, held by the same families for generations, is only now — quietly — being offered.",
     "factsTitle": "At a glance",
     "facts": {
-      "drive1": "40 min to Cabo San Lucas",
+      "drive1": "30 min to Cabo San Lucas",
       "drive2": "15 min to Todos Santos",
       "drive3": "1 h to La Paz international airport",
       "surf": "World-class surf at Cerritos & San Pedrito",
       "coast": "Direct access from Federal Highway 19"
     },
-    "mapCaption": "Elías Calles — on the Pacific, halfway between Los Cabos and La Paz",
+    "mapCaption": "Elías Calles — on the Pacific, 30 minutes from Cabo San Lucas",
     "pacific": "Pacific Ocean",
     "highway": "Federal Hwy 19"
   },
@@ -56,6 +56,92 @@
     },
     "masterPlanCta": "Download the master plan (PDF)",
     "masterPlanNote": "Full master plan with lot dimensions and road layout"
+  },
+  "market": {
+    "eyebrow": "Market & Location Analysis",
+    "title": "Thirty minutes from Cabo, a coast on the rise",
+    "intro": "Lomas del Pacífico sits roughly 50 km — about 30 minutes — from Cabo San Lucas, reached by a modern four-lane federal highway.",
+    "advantagesTitle": "Location advantages",
+    "advantages": [
+      "Direct, safe access from the four-lane federal highway",
+      "Individual lots with legal certainty (certeza jurídica)",
+      "A rustic project with strong appreciation potential",
+      "A growing area beside the main Pacific developments of Los Cabos"
+    ],
+    "comparisonTitle": "Regional market comparison",
+    "comparisonCols": {
+      "zone": "Zone",
+      "distance": "Distance to Cabo San Lucas",
+      "market": "Main market",
+      "price": "Typical price (1,500 m² lot)"
+    },
+    "comparisonRows": [
+      {
+        "zone": "Todos Santos",
+        "distance": "60–70 min",
+        "market": "Lifestyle premium",
+        "price": "USD 150,000–500,000+"
+      },
+      {
+        "zone": "Cerritos",
+        "distance": "45–55 min",
+        "market": "Surf / Airbnb",
+        "price": "USD 77,000–265,000+"
+      },
+      {
+        "zone": "El Pescadero",
+        "distance": "50–60 min",
+        "market": "Residential expat",
+        "price": "USD 85,000–325,000+"
+      },
+      {
+        "zone": "Elías Calles",
+        "distance": "45–60 min",
+        "market": "Early investor",
+        "price": "USD 90,000–175,000+"
+      },
+      {
+        "zone": "Lomas del Pacífico",
+        "tag": "this project",
+        "distance": "30 min",
+        "market": "Cabo investment",
+        "price": "—",
+        "highlight": true
+      }
+    ],
+    "perSqmTitle": "Price per m² — regional comparison",
+    "perSqmCols": {
+      "zone": "Zone",
+      "price": "Estimated USD/m²"
+    },
+    "perSqmRows": [
+      {
+        "zone": "Todos Santos",
+        "price": "$120–$500+"
+      },
+      {
+        "zone": "Cerritos",
+        "price": "$80–$250"
+      },
+      {
+        "zone": "El Pescadero",
+        "price": "$45–$160"
+      },
+      {
+        "zone": "Elías Calles",
+        "price": "$40–$100"
+      },
+      {
+        "zone": "Lomas del Pacífico",
+        "tag": "this project",
+        "price": "$30–$80",
+        "highlight": true
+      }
+    ],
+    "opinionTitle": "Professional opinion",
+    "opinion1": "Lomas del Pacífico holds a privileged position — about 30 minutes from Cabo San Lucas along a four-lane highway, it stands out as one of the best investment options on the Pacific side of the cape.",
+    "opinion2": "With room to appreciate as services, infrastructure and international demand keep growing across the region, it lets you enter early at the most accessible price point on this stretch of coast.",
+    "disclaimer": "Prices are 2026 market observations and may vary by location, services and lot features."
   },
   "map": {
     "eyebrow": "The Lots",

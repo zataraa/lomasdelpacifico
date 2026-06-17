@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { Location } from "@/components/sections/Location";
 import { Development } from "@/components/sections/Development";
+import { MarketAnalysis } from "@/components/sections/MarketAnalysis";
 import { MapSection } from "@/components/sections/MapSection";
 import { Inventory } from "@/components/sections/Inventory";
 import { PaymentPlans } from "@/components/sections/PaymentPlans";
@@ -42,6 +43,7 @@ function PageContent() {
         <Location />
         <div className="gold-rule mx-auto max-w-5xl" />
         <Development />
+        <MarketAnalysis />
         <MapSection />
         <Inventory />
         <div className="gold-rule mx-auto max-w-5xl" />

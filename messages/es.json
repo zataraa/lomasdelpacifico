@@ -17,7 +17,7 @@
   "hero": {
     "eyebrow": "Elías Calles · Baja California Sur",
     "title": "Donde el desierto encuentra al Pacífico",
-    "subtitle": "Lotes privados en la última costa tranquila de México — a medio camino entre Los Cabos y La Paz, a minutos de Todos Santos.",
+    "subtitle": "Lotes privados en la última costa tranquila de México — a 30 minutos de Cabo San Lucas, a minutos de Todos Santos.",
     "cta": "Explorar los lotes",
     "secondaryCta": "Solicitar información",
     "scrollHint": "Deslice"
@@ -26,17 +26,17 @@
     "eyebrow": "La Ubicación",
     "title": "El lado sereno de Baja",
     "lead": "Lomas del Pacífico descansa sobre la vertiente del Pacífico de Baja California Sur, en Elías Calles — un nombre que se susurra entre surfistas y entre quienes llegaron a Todos Santos antes que el mundo.",
-    "body1": "La Carretera Federal 19 recorre la costa a la puerta del desarrollo: a cuarenta minutos al sur están las marinas y los vuelos de Los Cabos; a una hora al norte, la calma colonial de La Paz. En medio — solo la luz del océano, huertas orgánicas y algunos de los mejores puntos de surf de la península.",
+    "body1": "La Carretera Federal 19 recorre la costa a la puerta del desarrollo: a treinta minutos al sur están las marinas y los vuelos de Los Cabos; a una hora al norte, la calma colonial de La Paz. En medio — solo la luz del océano, huertas orgánicas y algunos de los mejores puntos de surf de la península.",
     "body2": "Esta es una costa de horizontes largos y atardeceres más largos aún. Las ballenas pasan cerca de la orilla en invierno. El desierto florece tras las lluvias de verano. Y la tierra, en manos de las mismas familias por generaciones, apenas ahora — discretamente — se ofrece.",
     "factsTitle": "En síntesis",
     "facts": {
-      "drive1": "40 min a Cabo San Lucas",
+      "drive1": "30 min a Cabo San Lucas",
       "drive2": "15 min a Todos Santos",
       "drive3": "1 h al aeropuerto internacional de La Paz",
       "surf": "Surf de clase mundial en Cerritos y San Pedrito",
       "coast": "Acceso directo desde la Carretera Federal 19"
     },
-    "mapCaption": "Elías Calles — sobre el Pacífico, a medio camino entre Los Cabos y La Paz",
+    "mapCaption": "Elías Calles — sobre el Pacífico, a 30 minutos de Cabo San Lucas",
     "pacific": "Océano Pacífico",
     "highway": "Carr. Federal 19"
   },
@@ -56,6 +56,92 @@
     },
     "masterPlanCta": "Descargar el plan maestro (PDF)",
     "masterPlanNote": "Plan maestro completo con dimensiones de lotes y trazo de caminos"
+  },
+  "market": {
+    "eyebrow": "Análisis de Mercado y Ubicación",
+    "title": "A treinta minutos de Cabo, una costa en ascenso",
+    "intro": "Lomas del Pacífico se encuentra a unos 50 km — alrededor de 30 minutos — de Cabo San Lucas, por una moderna carretera federal de cuatro carriles.",
+    "advantagesTitle": "Ventajas de ubicación",
+    "advantages": [
+      "Acceso directo y seguro desde la carretera federal de cuatro carriles",
+      "Lotes individuales con certeza jurídica",
+      "Proyecto rústico con alto potencial de plusvalía",
+      "Zona en crecimiento junto a los principales desarrollos del Pacífico de Los Cabos"
+    ],
+    "comparisonTitle": "Comparativa del mercado regional",
+    "comparisonCols": {
+      "zone": "Zona",
+      "distance": "Distancia a Cabo San Lucas",
+      "market": "Mercado principal",
+      "price": "Precio típico (lote de 1,500 m²)"
+    },
+    "comparisonRows": [
+      {
+        "zone": "Todos Santos",
+        "distance": "60–70 min",
+        "market": "Estilo de vida premium",
+        "price": "USD 150,000–500,000+"
+      },
+      {
+        "zone": "Cerritos",
+        "distance": "45–55 min",
+        "market": "Surf / Airbnb",
+        "price": "USD 77,000–265,000+"
+      },
+      {
+        "zone": "El Pescadero",
+        "distance": "50–60 min",
+        "market": "Residencial expatriado",
+        "price": "USD 85,000–325,000+"
+      },
+      {
+        "zone": "Elías Calles",
+        "distance": "45–60 min",
+        "market": "Inversionista temprano",
+        "price": "USD 90,000–175,000+"
+      },
+      {
+        "zone": "Lomas del Pacífico",
+        "tag": "este proyecto",
+        "distance": "30 min",
+        "market": "Inversión hacia Cabo",
+        "price": "—",
+        "highlight": true
+      }
+    ],
+    "perSqmTitle": "Precio por m² — comparativa regional",
+    "perSqmCols": {
+      "zone": "Zona",
+      "price": "USD/m² estimado"
+    },
+    "perSqmRows": [
+      {
+        "zone": "Todos Santos",
+        "price": "$120–$500+"
+      },
+      {
+        "zone": "Cerritos",
+        "price": "$80–$250"
+      },
+      {
+        "zone": "El Pescadero",
+        "price": "$45–$160"
+      },
+      {
+        "zone": "Elías Calles",
+        "price": "$40–$100"
+      },
+      {
+        "zone": "Lomas del Pacífico",
+        "tag": "este proyecto",
+        "price": "$30–$80",
+        "highlight": true
+      }
+    ],
+    "opinionTitle": "Opinión profesional",
+    "opinion1": "Lomas del Pacífico ocupa una posición privilegiada — a unos 30 minutos de Cabo San Lucas por carretera de cuatro carriles, destaca como una de las mejores opciones de inversión en el lado del Pacífico del cabo.",
+    "opinion2": "Con margen para revalorizarse a medida que crecen los servicios, la infraestructura y la demanda internacional en la región, permite entrar temprano al precio más accesible de este tramo de costa.",
+    "disclaimer": "Los precios son observaciones del mercado 2026 y pueden variar según la ubicación, los servicios y las características del lote."
   },
   "map": {
     "eyebrow": "Los Lotes",
