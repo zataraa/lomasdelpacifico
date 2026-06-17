@@ -1,26 +1,99 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ------------------------------------------------------------------ */
+/*  Lomas del Pacífico — design tokens                                  */
+/*  Warm ivory & sand palette · champagne gold accents · deep ink text  */
+/* ------------------------------------------------------------------ */
+
+@theme {
+  /* Palette */
+  --color-ivory: #f7f3ec;
+  --color-ivory-soft: #fbf9f4;
+  --color-sand: #eae2d3;
+  --color-sand-deep: #ddd2bc;
+  --color-ink: #232730;
+  --color-ink-soft: #4c5260;
+  --color-gold: #b9975b;
+  --color-gold-soft: #d4bc8b;
+  --color-gold-deep: #96793f;
+  --color-olive: #6b6b4f;
+  --color-terracotta: #b06b4a;
+  --color-night: #1b2430;
+
+  /* Typography */
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-inter), Inter, system-ui, sans-serif;
+
+  /* Motion */
+  --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-gold-soft);
+  color: var(--color-ink);
+}
+
+/* Fine-grain noise texture overlay — apply with .texture-grain.
+   NOTE: the element must be positioned (e.g. Tailwind `relative`,
+   `absolute` or `fixed`) — this class must not set position itself,
+   or it would override those utilities. */
+.texture-grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Thin gold rule used between sections */
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-gold) 50%,
+    transparent
+  );
+  opacity: 0.45;
+}
+
+/* Elegant focus states */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* MapLibre chrome refinements */
+.maplibregl-ctrl-attrib {
+  font-size: 10px;
+  background: rgba(247, 243, 236, 0.75) !important;
+}
+.maplibregl-ctrl-group {
+  border-radius: 9999px !important;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(35, 39, 48, 0.18) !important;
+}
+.maplibregl-canvas:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: -2px;
 }

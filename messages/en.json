@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "Lomas del Pacífico — Oceanview Land in Baja California Sur",
+    "description": "Private lots of ~1,500 m² on the Pacific coast of Baja California Sur, between Los Cabos and La Paz, minutes from Todos Santos. Own a piece of the last quiet coast."
+  },
+  "nav": {
+    "location": "Location",
+    "development": "The Development",
+    "map": "Lot Map",
+    "lots": "Inventory",
+    "plans": "Payment Plans",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "requestInfo": "Request Info",
+    "menu": "Menu"
+  },
+  "hero": {
+    "eyebrow": "Elías Calles · Baja California Sur",
+    "title": "Where the desert meets the Pacific",
+    "subtitle": "Private lots on Mexico's last quiet coast — halfway between Los Cabos and La Paz, minutes from Todos Santos.",
+    "cta": "Explore the lots",
+    "secondaryCta": "Request information",
+    "scrollHint": "Scroll"
+  },
+  "location": {
+    "eyebrow": "The Location",
+    "title": "The unhurried side of Baja",
+    "lead": "Lomas del Pacífico rests on the Pacific slope of Baja California Sur, in Elías Calles — a name whispered among surfers and those who arrived in Todos Santos before the world did.",
+    "body1": "Federal Highway 19 traces the coast at your doorstep: forty minutes south lie the marinas and flights of Los Cabos; an hour north, the colonial calm of La Paz. In between — nothing but ocean light, organic farms and some of the finest surf breaks on the peninsula.",
+    "body2": "This is a coast of long horizons and longer evenings. Whales pass close to shore in winter. The desert blooms after summer rain. And the land, held by the same families for generations, is only now — quietly — being offered.",
+    "factsTitle": "At a glance",
+    "facts": {
+      "drive1": "40 min to Cabo San Lucas",
+      "drive2": "15 min to Todos Santos",
+      "drive3": "1 h to La Paz international airport",
+      "surf": "World-class surf at Cerritos & San Pedrito",
+      "coast": "Direct access from Federal Highway 19"
+    },
+    "mapCaption": "Elías Calles — on the Pacific, halfway between Los Cabos and La Paz",
+    "pacific": "Pacific Ocean",
+    "highway": "Federal Hwy 19"
+  },
+  "development": {
+    "eyebrow": "The Development",
+    "title": "A master plan measured in horizons",
+    "lead": "{count} private lots from multiple ejidatarios, set within a master-planned community of nearly four thousand — each averaging 1,500 m² of high ground facing the Pacific.",
+    "body": "The lots on offer are a curated selection from several of the ejido's owners — from front-row parcels nearest the ocean to serene inland rises with mountain views. Roads are traced, boundaries are surveyed, and every lot is sold with its documentation in order.",
+    "stats": {
+      "lotsLabel": "lots for sale",
+      "areaValue": "1,500 m²",
+      "areaLabel": "average lot size",
+      "planValue": "3,988",
+      "planLabel": "lots in the master plan",
+      "frontValue": "1.7 km",
+      "frontLabel": "of coastal frontage"
+    },
+    "masterPlanCta": "Download the master plan (PDF)",
+    "masterPlanNote": "Full master plan with lot dimensions and road layout"
+  },
+  "map": {
+    "eyebrow": "The Lots",
+    "title": "Choose your place on the coast",
+    "subtitle": "Every available lot, mapped on the land itself. Select one to see its details, or filter by section, tier and price.",
+    "loading": "Loading the map…",
+    "ariaLabel": "Interactive map of lots for sale. The same lots are listed in the inventory section below.",
+    "legend": {
+      "title": "Legend",
+      "beachfront_premium": "Premium — front row",
+      "mid": "Mid — near the ocean",
+      "inland": "Inland — calm & views",
+      "unavailable": "Sold / Reserved",
+      "boundary": "Project boundary",
+      "masterplan": "Master-plan parcels"
+    },
+    "tooltip": {
+      "area": "{area} m²"
+    },
+    "filters": {
+      "title": "Filter lots",
+      "poligono": "Section",
+      "tier": "Tier",
+      "status": "Status",
+      "seller": "Seller",
+      "allSellers": "All sellers",
+      "maxPrice": "Max price",
+      "all": "All",
+      "anyPrice": "Any price",
+      "reset": "Reset",
+      "results": "{count, plural, one {# lot} other {# lots}} shown"
+    },
+    "basemap": {
+      "label": "Map style",
+      "satellite": "Satellite",
+      "minimal": "Minimal"
+    }
+  },
+  "lots": {
+    "tier": {
+      "beachfront_premium": "Premium · Front row",
+      "mid": "Near the ocean",
+      "inland": "Inland calm"
+    },
+    "status": {
+      "available": "Available",
+      "reserved": "Reserved",
+      "sold": "Sold"
+    },
+    "beachLabel": {
+      "front": "Premium — Front row to the Pacific",
+      "near": "Closer to the beach",
+      "calm": "Quiet inland setting with views"
+    },
+    "panel": {
+      "lotKey": "Lot key",
+      "area": "Surface",
+      "section": "Section",
+      "manzanaLote": "Block & lot",
+      "manzanaLoteValue": "Manzana {manzana} · Lote {lote}",
+      "sectionCARR": "Highway frontage",
+      "sectionAJUSTE": "Adjustment parcel",
+      "sectionPoligono": "Polygon {name}",
+      "sectionZona": "Zona {name}",
+      "beach": "Position",
+      "beachRank": "#{rank} of {total} by ocean proximity",
+      "status": "Status",
+      "price": "Price",
+      "priceOnRequest": "Price on request",
+      "viewPlans": "View payment plans",
+      "askPrice": "Request the price",
+      "contactAbout": "Ask about this lot",
+      "close": "Close lot details",
+      "title": "Lot Details",
+      "source": "Listed by",
+      "whatsappCta": "Contact via WhatsApp",
+      "financingCta": "Request financing details",
+      "priceOnRequestFull": "Price available upon request",
+      "disclaimer": "Final prices and availability may vary — please confirm with our sales team."
+    },
+    "inventory": {
+      "eyebrow": "Inventory",
+      "title": "The current release",
+      "subtitle": "{count} lots from multiple ejidatarios, brought together for the first time. Filters stay in step with the map above.",
+      "viewAll": "View all lots",
+      "hideAll": "Hide lots",
+      "viewOnMap": "View on map",
+      "details": "Details",
+      "empty": "No lots match these filters.",
+      "emptyCta": "Reset filters"
+    }
+  },
+  "plans": {
+    "eyebrow": "Payment Plans",
+    "title": "Acquire on your own terms",
+    "subtitle": "Three straightforward ways to own. All plans are denominated in US dollars; the Mexican peso equivalent is shown as reference.",
+    "forLot": "Plan for lot {lotId}",
+    "selectLot": "Select a lot",
+    "noLot": "General terms — select a lot on the map for exact figures.",
+    "names": {
+      "threeYear": "3 Years",
+      "fourYear": "4 Years",
+      "fiveYear": "5 Years"
+    },
+    "descriptions": {
+      "threeYear": "20% down, the balance financed over three years.",
+      "fourYear": "25% down, the balance financed over four years.",
+      "fiveYear": "30% down, the gentlest schedule — over five years."
+    },
+    "featured": "Most chosen",
+    "downPayment": "Down payment",
+    "monthly": "{months} monthly payments of",
+    "singlePayment": "Single payment",
+    "total": "Total price",
+    "discount": "{pct}% cash discount",
+    "surcharge": "{pct}% financing adjustment",
+    "priceOnRequestNote": "Exact figures are quoted once the lot price is confirmed — request it below.",
+    "reserveCta": "Reserve this lot",
+    "disclaimer": "Figures shown are illustrative and subject to final contract. Plans may be adjusted by the seller.",
+    "close": "Close payment plans"
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "title": "The light does the selling",
+    "subtitle": "Scenes from the coast at Elías Calles and the land itself.",
+    "captions": {
+      "one": "Pacific sunset from the upper lots",
+      "two": "The coastline at Elías Calles",
+      "three": "Desert bloom after summer rain",
+      "four": "Surf at Playa San Pedrito",
+      "five": "The sierra behind the development",
+      "six": "Evening over Todos Santos"
+    },
+    "placeholderNote": "Placeholder imagery — final photography in production"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Begin the conversation",
+    "subtitle": "Tell us which lot caught your eye — or simply ask. A member of the family answers personally, usually within a day.",
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+1 555 000 0000",
+      "lot": "Lot of interest",
+      "lotNone": "No specific lot yet",
+      "message": "Message",
+      "messagePlaceholder": "I'd like to know more about…",
+      "submit": "Send inquiry",
+      "sending": "Sending…",
+      "success": "Thank you — your inquiry is on its way. We will be in touch shortly.",
+      "error": "Something went wrong. Please try again, or write to us on WhatsApp.",
+      "errors": {
+        "name": "Please tell us your name",
+        "email": "Please enter a valid email",
+        "message": "Please include a short message"
+      }
+    },
+    "whatsapp": "Chat on WhatsApp",
+    "whatsappMessage": "Hello, I'm interested in Lomas del Pacífico{lotId, select, none {} other { — lot {lotId}}}. Could you share more information?"
+  },
+  "footer": {
+    "tagline": "Private lots on the Pacific coast of Baja California Sur.",
+    "navTitle": "Site",
+    "contactTitle": "Contact",
+    "legalTitle": "Legal",
+    "privacy": "Privacy notice",
+    "terms": "Terms of use",
+    "legalNote": "Lot availability, prices and plans are subject to change without notice. This site is informational and does not constitute an offer.",
+    "credits": "© {year} Lomas del Pacífico · {ejido}"
+  },
+  "common": {
+    "languageToggle": "Language",
+    "skipToContent": "Skip to content"
+  }
+}

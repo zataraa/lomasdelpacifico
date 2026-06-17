@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "Lomas del Pacífico — Terrenos frente al mar en Baja California Sur",
+    "description": "Lotes privados de ~1,500 m² en la costa del Pacífico de Baja California Sur, entre Los Cabos y La Paz, a minutos de Todos Santos. Sea dueño de la última costa tranquila de México."
+  },
+  "nav": {
+    "location": "Ubicación",
+    "development": "El Desarrollo",
+    "map": "Mapa de Lotes",
+    "lots": "Inventario",
+    "plans": "Planes de Pago",
+    "gallery": "Galería",
+    "contact": "Contacto",
+    "requestInfo": "Solicitar Información",
+    "menu": "Menú"
+  },
+  "hero": {
+    "eyebrow": "Elías Calles · Baja California Sur",
+    "title": "Donde el desierto encuentra al Pacífico",
+    "subtitle": "Lotes privados en la última costa tranquila de México — a medio camino entre Los Cabos y La Paz, a minutos de Todos Santos.",
+    "cta": "Explorar los lotes",
+    "secondaryCta": "Solicitar información",
+    "scrollHint": "Deslice"
+  },
+  "location": {
+    "eyebrow": "La Ubicación",
+    "title": "El lado sereno de Baja",
+    "lead": "Lomas del Pacífico descansa sobre la vertiente del Pacífico de Baja California Sur, en Elías Calles — un nombre que se susurra entre surfistas y entre quienes llegaron a Todos Santos antes que el mundo.",
+    "body1": "La Carretera Federal 19 recorre la costa a la puerta del desarrollo: a cuarenta minutos al sur están las marinas y los vuelos de Los Cabos; a una hora al norte, la calma colonial de La Paz. En medio — solo la luz del océano, huertas orgánicas y algunos de los mejores puntos de surf de la península.",
+    "body2": "Esta es una costa de horizontes largos y atardeceres más largos aún. Las ballenas pasan cerca de la orilla en invierno. El desierto florece tras las lluvias de verano. Y la tierra, en manos de las mismas familias por generaciones, apenas ahora — discretamente — se ofrece.",
+    "factsTitle": "En síntesis",
+    "facts": {
+      "drive1": "40 min a Cabo San Lucas",
+      "drive2": "15 min a Todos Santos",
+      "drive3": "1 h al aeropuerto internacional de La Paz",
+      "surf": "Surf de clase mundial en Cerritos y San Pedrito",
+      "coast": "Acceso directo desde la Carretera Federal 19"
+    },
+    "mapCaption": "Elías Calles — sobre el Pacífico, a medio camino entre Los Cabos y La Paz",
+    "pacific": "Océano Pacífico",
+    "highway": "Carr. Federal 19"
+  },
+  "development": {
+    "eyebrow": "El Desarrollo",
+    "title": "Un plan maestro medido en horizontes",
+    "lead": "{count} lotes privados de varios ejidatarios, dentro de una comunidad planificada de casi cuatro mil — cada uno con un promedio de 1,500 m² de terreno elevado frente al Pacífico.",
+    "body": "Los lotes en venta son una selección curada de varios propietarios del ejido — desde parcelas de primera fila junto al océano hasta serenas elevaciones interiores con vistas a la sierra. Los caminos están trazados, los linderos medidos, y cada lote se vende con su documentación en regla.",
+    "stats": {
+      "lotsLabel": "lotes en venta",
+      "areaValue": "1,500 m²",
+      "areaLabel": "superficie promedio",
+      "planValue": "3,988",
+      "planLabel": "lotes en el plan maestro",
+      "frontValue": "1.7 km",
+      "frontLabel": "de frente costero"
+    },
+    "masterPlanCta": "Descargar el plan maestro (PDF)",
+    "masterPlanNote": "Plan maestro completo con dimensiones de lotes y trazo de caminos"
+  },
+  "map": {
+    "eyebrow": "Los Lotes",
+    "title": "Elija su lugar en la costa",
+    "subtitle": "Cada lote disponible, ubicado sobre el terreno real. Seleccione uno para ver sus detalles, o filtre por sección, categoría y precio.",
+    "loading": "Cargando el mapa…",
+    "ariaLabel": "Mapa interactivo de lotes en venta. Los mismos lotes aparecen en la sección de inventario más abajo.",
+    "legend": {
+      "title": "Leyenda",
+      "beachfront_premium": "Premium — primera fila",
+      "mid": "Media — cerca del mar",
+      "inland": "Interior — calma y vistas",
+      "unavailable": "Vendido / Apartado",
+      "boundary": "Límite del proyecto",
+      "masterplan": "Parcelas del plan maestro"
+    },
+    "tooltip": {
+      "area": "{area} m²"
+    },
+    "filters": {
+      "title": "Filtrar lotes",
+      "poligono": "Sección",
+      "tier": "Categoría",
+      "status": "Estatus",
+      "seller": "Ejidatario",
+      "allSellers": "Todos los ejidatarios",
+      "maxPrice": "Precio máximo",
+      "all": "Todos",
+      "anyPrice": "Cualquier precio",
+      "reset": "Restablecer",
+      "results": "{count, plural, one {# lote} other {# lotes}} en pantalla"
+    },
+    "basemap": {
+      "label": "Estilo de mapa",
+      "satellite": "Satélite",
+      "minimal": "Plano"
+    }
+  },
+  "lots": {
+    "tier": {
+      "beachfront_premium": "Premium · Primera fila",
+      "mid": "Cerca del mar",
+      "inland": "Calma interior"
+    },
+    "status": {
+      "available": "Disponible",
+      "reserved": "Apartado",
+      "sold": "Vendido"
+    },
+    "beachLabel": {
+      "front": "Premium — Primera fila frente al Pacífico",
+      "near": "Más cerca de la playa",
+      "calm": "Entorno interior tranquilo con vistas"
+    },
+    "panel": {
+      "lotKey": "Clave del lote",
+      "area": "Superficie",
+      "section": "Sección",
+      "manzanaLote": "Manzana y lote",
+      "manzanaLoteValue": "Manzana {manzana} · Lote {lote}",
+      "sectionCARR": "Frente de carretera",
+      "sectionAJUSTE": "Parcela de ajuste",
+      "sectionPoligono": "Polígono {name}",
+      "sectionZona": "Zona {name}",
+      "beach": "Posición",
+      "beachRank": "#{rank} de {total} por cercanía al mar",
+      "status": "Estatus",
+      "price": "Precio",
+      "priceOnRequest": "Precio a consultar",
+      "viewPlans": "Ver planes de pago",
+      "askPrice": "Consultar el precio",
+      "contactAbout": "Preguntar por este lote",
+      "close": "Cerrar detalles del lote",
+      "title": "Detalles del Lote",
+      "source": "Ofrecido por",
+      "whatsappCta": "Contactar por WhatsApp",
+      "financingCta": "Solicitar detalles de financiamiento",
+      "priceOnRequestFull": "Precio disponible a solicitud",
+      "disclaimer": "Los precios y la disponibilidad finales pueden variar — confírmelos con nuestro equipo de ventas."
+    },
+    "inventory": {
+      "eyebrow": "Inventario",
+      "title": "La entrega actual",
+      "subtitle": "{count} lotes de varios ejidatarios, reunidos por primera vez. Los filtros van de la mano con el mapa de arriba.",
+      "viewAll": "Ver todos los lotes",
+      "hideAll": "Ocultar lotes",
+      "viewOnMap": "Ver en el mapa",
+      "details": "Detalles",
+      "empty": "Ningún lote coincide con estos filtros.",
+      "emptyCta": "Restablecer filtros"
+    }
+  },
+  "plans": {
+    "eyebrow": "Planes de Pago",
+    "title": "Adquiera a su manera",
+    "subtitle": "Tres formas sencillas de ser dueño. Todos los planes están denominados en dólares americanos; el equivalente en pesos se muestra como referencia.",
+    "forLot": "Plan para el lote {lotId}",
+    "selectLot": "Seleccione un lote",
+    "noLot": "Términos generales — seleccione un lote en el mapa para cifras exactas.",
+    "names": {
+      "threeYear": "3 Años",
+      "fourYear": "4 Años",
+      "fiveYear": "5 Años"
+    },
+    "descriptions": {
+      "threeYear": "20% de enganche, el saldo financiado a tres años.",
+      "fourYear": "25% de enganche, el saldo financiado a cuatro años.",
+      "fiveYear": "30% de enganche, el esquema más holgado — a cinco años."
+    },
+    "featured": "El más elegido",
+    "downPayment": "Enganche",
+    "monthly": "{months} mensualidades de",
+    "singlePayment": "Pago único",
+    "total": "Precio total",
+    "discount": "{pct}% de descuento de contado",
+    "surcharge": "{pct}% de ajuste por financiamiento",
+    "priceOnRequestNote": "Las cifras exactas se cotizan al confirmarse el precio del lote — solicítelo abajo.",
+    "reserveCta": "Apartar este lote",
+    "disclaimer": "Las cifras mostradas son ilustrativas y están sujetas a contrato final. Los planes pueden ser ajustados por el vendedor.",
+    "close": "Cerrar planes de pago"
+  },
+  "gallery": {
+    "eyebrow": "Galería",
+    "title": "La luz vende sola",
+    "subtitle": "Escenas de la costa en Elías Calles y del terreno mismo.",
+    "captions": {
+      "one": "Atardecer en el Pacífico desde los lotes altos",
+      "two": "La costa en Elías Calles",
+      "three": "El desierto en flor tras las lluvias",
+      "four": "Surf en Playa San Pedrito",
+      "five": "La sierra detrás del desarrollo",
+      "six": "El atardecer sobre Todos Santos"
+    },
+    "placeholderNote": "Imágenes provisionales — fotografía final en producción"
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Iniciemos la conversación",
+    "subtitle": "Cuéntenos qué lote le llamó la atención — o simplemente pregunte. Un miembro de la familia responde personalmente, normalmente el mismo día.",
+    "form": {
+      "name": "Nombre completo",
+      "namePlaceholder": "Su nombre",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "usted@ejemplo.com",
+      "phone": "Teléfono (opcional)",
+      "phonePlaceholder": "+52 612 000 0000",
+      "lot": "Lote de interés",
+      "lotNone": "Aún sin lote específico",
+      "message": "Mensaje",
+      "messagePlaceholder": "Me gustaría saber más sobre…",
+      "submit": "Enviar consulta",
+      "sending": "Enviando…",
+      "success": "Gracias — su consulta va en camino. Nos pondremos en contacto en breve.",
+      "error": "Algo salió mal. Inténtelo de nuevo o escríbanos por WhatsApp.",
+      "errors": {
+        "name": "Por favor díganos su nombre",
+        "email": "Ingrese un correo válido",
+        "message": "Incluya un breve mensaje"
+      }
+    },
+    "whatsapp": "Escribir por WhatsApp",
+    "whatsappMessage": "Hola, me interesa Lomas del Pacífico{lotId, select, none {} other { — lote {lotId}}}. ¿Podrían compartirme más información?"
+  },
+  "footer": {
+    "tagline": "Lotes privados en la costa del Pacífico de Baja California Sur.",
+    "navTitle": "Sitio",
+    "contactTitle": "Contacto",
+    "legalTitle": "Legal",
+    "privacy": "Aviso de privacidad",
+    "terms": "Términos de uso",
+    "legalNote": "La disponibilidad de lotes, precios y planes están sujetos a cambio sin previo aviso. Este sitio es informativo y no constituye una oferta.",
+    "credits": "© {year} Lomas del Pacífico · {ejido}"
+  },
+  "common": {
+    "languageToggle": "Idioma",
+    "skipToContent": "Saltar al contenido"
+  }
+}
