@@ -120,8 +120,8 @@ function PanelBody({ lot, onClose }: { lot: Lot; onClose: () => void }) {
 
   return (
     <div className="flex h-full flex-col">
-      {/* Header: "Lot Details" + lot id, close X */}
-      <div className="flex items-start justify-between gap-4">
+      {/* Header: "Lot Details" + lot id, close X — pinned */}
+      <div className="flex shrink-0 items-start justify-between gap-4">
         <div>
           <p className="text-[11px] uppercase tracking-[0.28em] text-gold">
             {t("panel.title")}
@@ -142,6 +142,13 @@ function PanelBody({ lot, onClose }: { lot: Lot; onClose: () => void }) {
         </button>
       </div>
 
+      {/* Scrollable middle: detail rows + disclaimer. On desktop (md+) the
+          panel has a fixed height, so this region scrolls while the header
+          and CTAs stay pinned — both calls-to-action are always visible even
+          when the panel is shorter than its content (the desktop "cut off"
+          bug). On mobile the bottom sheet scrolls as a whole (its proven
+          behavior), so the desktop-only scroll classes are gated behind md:. */}
+      <div className="md:min-h-0 md:flex-1 md:overflow-y-auto">
       <dl className="mt-5 space-y-3.5 border-t border-gold/20 pt-5">
         {rows.map((row) => (
           <div
@@ -159,8 +166,10 @@ function PanelBody({ lot, onClose }: { lot: Lot; onClose: () => void }) {
       <p className="mt-5 border-t border-gold/20 pt-4 text-[11.5px] leading-relaxed text-ink-soft/85 italic">
         {t("panel.disclaimer")}
       </p>
+      </div>
 
-      <div className="mt-5 flex flex-col gap-3">
+      {/* Pinned CTAs — always visible on desktop and mobile */}
+      <div className="mt-5 flex shrink-0 flex-col gap-3">
         {/* Primary: WhatsApp */}
         <a
           href={whatsappHref}
@@ -225,7 +234,7 @@ export function LotPanel() {
             animate={{ opacity: 1, x: 0 }}
             exit={reduceMotion ? undefined : { opacity: 0, x: 24 }}
             transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-            className="texture-grain absolute top-5 right-5 bottom-5 z-20 hidden w-[350px] overflow-y-auto border border-gold/25 bg-ivory/95 p-6 shadow-[0_12px_48px_rgba(35,39,48,0.25)] backdrop-blur-md outline-none md:block"
+            className="texture-grain absolute top-5 right-5 bottom-5 z-20 hidden w-[350px] overflow-hidden border border-gold/25 bg-ivory/95 p-6 shadow-[0_12px_48px_rgba(35,39,48,0.25)] backdrop-blur-md outline-none md:block"
           >
             <PanelBody lot={lot} onClose={close} />
           </motion.div>
