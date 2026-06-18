@@ -31,10 +31,7 @@ function PageContent() {
 
   return (
     <>
-      <a
-        href="#location"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-ivory focus:px-4 focus:py-2 focus:text-sm focus:text-ink"
-      >
+      <a href="#location" className="skip-link">
         {t("skipToContent")}
       </a>
       <Header />
