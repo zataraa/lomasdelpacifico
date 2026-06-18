@@ -1,5 +1,4 @@
 import { setRequestLocale } from "next-intl/server";
-import { useTranslations } from "next-intl";
 import { use } from "react";
 
 import { Header } from "@/components/layout/Header";
@@ -27,13 +26,8 @@ export default function HomePage({
 }
 
 function PageContent() {
-  const t = useTranslations("common");
-
   return (
     <>
-      <a href="#location" className="skip-link">
-        {t("skipToContent")}
-      </a>
       <Header />
       <main>
         <Hero />

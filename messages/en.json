@@ -316,7 +316,6 @@
     "credits": "© {year} Lomas del Pacífico · {ejido}"
   },
   "common": {
-    "languageToggle": "Language",
-    "skipToContent": "Skip to content"
+    "languageToggle": "Language"
   }
 }
