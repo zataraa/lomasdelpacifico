@@ -8,8 +8,8 @@ import { LangToggle } from "./LangToggle";
 
 const NAV_ITEMS = [
   { id: "location", key: "location" },
-  { id: "development", key: "development" },
   { id: "map", key: "map" },
+  { id: "development", key: "development" },
   { id: "lots", key: "lots" },
   { id: "plans", key: "plans" },
   { id: "gallery", key: "gallery" },

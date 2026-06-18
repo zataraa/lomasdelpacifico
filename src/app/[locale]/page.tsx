@@ -42,9 +42,9 @@ function PageContent() {
         <Hero />
         <Location />
         <div className="gold-rule mx-auto max-w-5xl" />
+        <MapSection />
         <Development />
         <MarketAnalysis />
-        <MapSection />
         <Inventory />
         <div className="gold-rule mx-auto max-w-5xl" />
         <PaymentPlans />
