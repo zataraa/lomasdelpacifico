@@ -58,9 +58,9 @@ export const lotOverrides: Record<
   //   "R22P121LS-12": { priceUsd: 120_000 },  → a custom price for one lot
   //   "R39AJULS-30":  { priceUsd: null },      → show "Price on request"
   //   "R1CARRLS-12":  { tier: "beachfront_premium" }, → move to another tier
-  // The entries below mark specific lots as taken:
-  "R23P121LS-27": { status: "reserved" },
-  "R26P121LS-25": { status: "sold" },
+  //   "R23P121LS-27": { status: "reserved" },  → mark as reserved
+  //   "R26P121LS-25": { status: "sold" },      → mark as sold
+  // No overrides at the moment — every lot is listed as available.
 };
 
 /* ────────────────────────────────────────────────────────────────────
