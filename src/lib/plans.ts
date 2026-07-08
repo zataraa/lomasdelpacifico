@@ -1,6 +1,10 @@
-import { paymentPlans, type PaymentPlan } from "@config/pricing";
+import {
+  paymentPlans,
+  tieredPaymentPlans,
+  type PaymentPlan,
+} from "@config/pricing";
 
-export { paymentPlans };
+export { paymentPlans, tieredPaymentPlans };
 export type { PaymentPlan };
 
 export interface PlanQuote {

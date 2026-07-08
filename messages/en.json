@@ -105,7 +105,7 @@
         "tag": "this project",
         "distance": "30 min",
         "market": "Cabo investment",
-        "price": "From USD 99,000",
+        "price": "From USD 45,000",
         "highlight": true
       }
     ],
@@ -134,7 +134,7 @@
       {
         "zone": "Lomas del Pacífico",
         "tag": "this project",
-        "price": "$30–$80",
+        "price": "$30–$100",
         "highlight": true
       }
     ],
@@ -196,6 +196,12 @@
       "near": "Closer to the beach",
       "calm": "Quiet inland setting with views"
     },
+    "priceTierName": {
+      "premium": "Premium",
+      "media": "Media",
+      "interior": "Interior",
+      "bajio": "Bajío"
+    },
     "panel": {
       "lotKey": "Lot key",
       "area": "Surface",
@@ -210,6 +216,15 @@
       "beachRank": "#{rank} of {total} by ocean proximity",
       "status": "Status",
       "price": "Price",
+      "category": "Category",
+      "cashPrice": "Cash price",
+      "financingTitle": "Financing available",
+      "financingTerm": "Term",
+      "financingTotal": "Total",
+      "financingDown": "Down",
+      "financingMonthly": "Monthly",
+      "financingYears": "{years} yr",
+      "financingNote": "Financed totals include each term's adjustment over the cash price. Down payments of 20–30%.",
       "priceOnRequest": "Price on request",
       "viewPlans": "View payment plans",
       "askPrice": "Request the price",
@@ -237,7 +252,7 @@
   "plans": {
     "eyebrow": "Payment Plans",
     "title": "Acquire on your own terms",
-    "subtitle": "Three straightforward ways to own. All plans are denominated in US dollars; the Mexican peso equivalent is shown as reference.",
+    "subtitle": "Three straightforward ways to own: 20–30% down and the balance in equal monthly payments over 3–5 years. All figures in US dollars.",
     "forLot": "Plan for lot {lotId}",
     "selectLot": "Select a lot",
     "noLot": "General terms — select a lot on the map for exact figures.",
@@ -259,6 +274,22 @@
     "discount": "{pct}% cash discount",
     "surcharge": "{pct}% financing adjustment",
     "priceOnRequestNote": "Exact figures are quoted once the lot price is confirmed — request it below.",
+    "tierTable": {
+      "title": "Pricing by category",
+      "names": {
+        "premium": "Premium",
+        "media": "Media",
+        "interior": "Interior",
+        "bajio": "Bajío"
+      },
+      "cols": {
+        "tier": "Category",
+        "rate": "USD per m²",
+        "cash": "Cash price (≈1,500 m² lot)",
+        "monthly": "{years}-yr monthly"
+      },
+      "note": "Per-m² pricing applies to lots listed by M.S.A.V.; each lot's exact price is calculated from its surveyed area. Monthly figures shown are for a typical 1,500 m² lot after the down payment. Other sellers' lots are listed at a flat price."
+    },
     "reserveCta": "Reserve this lot",
     "disclaimer": "Figures shown are illustrative and subject to final contract. Plans may be adjusted by the seller.",
     "close": "Close payment plans"

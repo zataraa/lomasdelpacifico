@@ -17,7 +17,10 @@ import { site } from "@config/site";
 import {
   lotOverrides,
   priceByTierUsd,
+  priceTierByLot,
+  tieredPriceUsd,
   type LotStatus,
+  type PriceTier,
   type Tier,
 } from "@config/pricing";
 
@@ -27,7 +30,7 @@ import lotesSusanaZonaSur from "@/data/lotes-susana-zona-sur.json";
 import lotesFlorencioMoreno from "@/data/lotes-florencio-moreno.json";
 import projectBoundary from "@/data/project-boundary.json";
 
-export type { LotStatus, Tier };
+export type { LotStatus, PriceTier, Tier };
 
 /* ------------------------------------------------------------------ */
 /* Types                                                                */
@@ -82,6 +85,12 @@ export interface Lot {
   status: LotStatus;
   priceUsd: number | null;
   priceMxn: number | null;
+  /**
+   * Pricing category (Premium/Media/Interior/Bajío) for lots priced per
+   * m² via config/pricing.ts; null for flat-priced lots. Distinct from
+   * `tier`, which drives the map colors and is untouched by pricing.
+   */
+  priceTier: PriceTier | null;
   /** Initials of the lot's seller, shown in the panel (e.g. "S.S.V."). */
   sellerInitials: string | null;
   /** Manzana/Lote scheme (Zona Sur lots); null for rifa-named lots. */
@@ -113,16 +122,24 @@ function toLot(f: RawFeature): Lot {
   const tier = override.tier ?? p.tier;
   const status = override.status ?? p.status;
 
+  // Tiered per-m² pricing (config/pricing.ts §3) wins over the flat
+  // list price. Tiered lots are quoted in USD only — no MXN figure.
+  const priceTier = priceTierByLot[p.lot_id] ?? null;
+
   const priceUsd =
     override.priceUsd !== undefined
       ? override.priceUsd
-      : p.price_usd ?? priceByTierUsd[tier];
+      : priceTier
+        ? tieredPriceUsd(priceTier, p.area_m2)
+        : p.price_usd ?? priceByTierUsd[tier];
 
   const priceMxn =
     override.priceMxn !== undefined
       ? override.priceMxn
-      : p.price_mxn ??
-        (priceUsd != null ? Math.round(priceUsd * site.usdToMxn) : null);
+      : priceTier
+        ? null
+        : p.price_mxn ??
+          (priceUsd != null ? Math.round(priceUsd * site.usdToMxn) : null);
 
   return {
     lotId: p.lot_id,
@@ -135,6 +152,7 @@ function toLot(f: RawFeature): Lot {
     status,
     priceUsd,
     priceMxn,
+    priceTier,
     sellerInitials: p.seller_initials ?? null,
     manzana: p.manzana ?? null,
     lote: p.lote ?? null,

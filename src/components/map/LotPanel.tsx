@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 
 import { site } from "@config/site";
 import { beachLabelKey, getLot, lotCount, type Lot } from "@/lib/lots";
+import { quotePlan, tieredPaymentPlans } from "@/lib/plans";
 import {
   formatAreaM2,
   formatAreaSqFt,
@@ -49,8 +50,18 @@ function PanelBody({ lot, onClose }: { lot: Lot; onClose: () => void }) {
       label: t("panel.area"),
       value: `${formatAreaM2(lot.areaM2, locale)} · ${formatAreaSqFt(lot.areaM2, locale)}`,
     },
+    // Pricing category — only for lots priced per m² (official names
+    // Premium / Media / Interior / Bajío, identical in EN and ES).
+    ...(lot.priceTier
+      ? [
+          {
+            label: t("panel.category"),
+            value: t(`priceTierName.${lot.priceTier}`),
+          },
+        ]
+      : []),
     {
-      label: t("panel.price"),
+      label: lot.priceTier ? t("panel.cashPrice") : t("panel.price"),
       value:
         lot.priceUsd != null ? (
           <span>
@@ -162,6 +173,60 @@ function PanelBody({ lot, onClose }: { lot: Lot; onClose: () => void }) {
           </div>
         ))}
       </dl>
+
+      {/* Financing breakdown — only for tiered (per-m²) pricing. Totals
+          carry the per-term surcharge from config/pricing.ts. */}
+      {lot.priceTier && lot.priceUsd != null && lot.status === "available" && (
+        <div className="mt-5 border-t border-gold/20 pt-4">
+          <p className="text-[11px] uppercase tracking-[0.18em] text-ink-soft">
+            {t("panel.financingTitle")}
+          </p>
+          <table className="mt-2.5 w-full text-[12px]">
+            <thead>
+              <tr className="text-[10px] uppercase tracking-[0.12em] text-ink-soft/80">
+                <th className="pb-1 text-left font-normal">
+                  {t("panel.financingTerm")}
+                </th>
+                <th className="pb-1 text-right font-normal">
+                  {t("panel.financingTotal")}
+                </th>
+                <th className="pb-1 text-right font-normal">
+                  {t("panel.financingDown")}
+                </th>
+                <th className="pb-1 text-right font-normal">
+                  {t("panel.financingMonthly")}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {tieredPaymentPlans.map((plan) => {
+                const quote = quotePlan(plan, lot.priceUsd!);
+                return (
+                  <tr key={plan.id} className="text-ink">
+                    <td className="py-1 pr-2 whitespace-nowrap text-ink-soft">
+                      {t("panel.financingYears", { years: plan.months / 12 })}
+                    </td>
+                    <td className="py-1 text-right whitespace-nowrap">
+                      {formatUsd(quote.total, locale)}
+                    </td>
+                    <td className="py-1 text-right whitespace-nowrap">
+                      {formatUsd(quote.downPayment, locale)}
+                    </td>
+                    <td className="py-1 text-right whitespace-nowrap font-medium">
+                      {quote.monthly != null
+                        ? formatUsd(quote.monthly, locale)
+                        : "—"}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+          <p className="mt-1.5 text-[10.5px] leading-relaxed text-ink-soft/70">
+            {t("panel.financingNote")}
+          </p>
+        </div>
+      )}
 
       <p className="mt-5 border-t border-gold/20 pt-4 text-[11.5px] leading-relaxed text-ink-soft/85 italic">
         {t("panel.disclaimer")}

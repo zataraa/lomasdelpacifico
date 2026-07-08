@@ -105,7 +105,7 @@
         "tag": "este proyecto",
         "distance": "30 min",
         "market": "Inversión hacia Cabo",
-        "price": "Desde USD 99,000",
+        "price": "Desde USD 45,000",
         "highlight": true
       }
     ],
@@ -134,7 +134,7 @@
       {
         "zone": "Lomas del Pacífico",
         "tag": "este proyecto",
-        "price": "$30–$80",
+        "price": "$30–$100",
         "highlight": true
       }
     ],
@@ -196,6 +196,12 @@
       "near": "Más cerca de la playa",
       "calm": "Entorno interior tranquilo con vistas"
     },
+    "priceTierName": {
+      "premium": "Premium",
+      "media": "Media",
+      "interior": "Interior",
+      "bajio": "Bajío"
+    },
     "panel": {
       "lotKey": "Clave del lote",
       "area": "Superficie",
@@ -210,6 +216,15 @@
       "beachRank": "#{rank} de {total} por cercanía al mar",
       "status": "Estatus",
       "price": "Precio",
+      "category": "Categoría",
+      "cashPrice": "Precio de contado",
+      "financingTitle": "Financiamiento disponible",
+      "financingTerm": "Plazo",
+      "financingTotal": "Total",
+      "financingDown": "Enganche",
+      "financingMonthly": "Mensual",
+      "financingYears": "{years} años",
+      "financingNote": "Los totales financiados incluyen el ajuste de cada plazo sobre el precio de contado. Enganches del 20 al 30%.",
       "priceOnRequest": "Precio a consultar",
       "viewPlans": "Ver planes de pago",
       "askPrice": "Consultar el precio",
@@ -237,7 +252,7 @@
   "plans": {
     "eyebrow": "Planes de Pago",
     "title": "Adquiera a su manera",
-    "subtitle": "Tres formas sencillas de ser dueño. Todos los planes están denominados en dólares americanos; el equivalente en pesos se muestra como referencia.",
+    "subtitle": "Tres formas sencillas de ser dueño: del 20 al 30% de enganche y el saldo en mensualidades iguales de 3 a 5 años. Todas las cifras en dólares americanos.",
     "forLot": "Plan para el lote {lotId}",
     "selectLot": "Seleccione un lote",
     "noLot": "Términos generales — seleccione un lote en el mapa para cifras exactas.",
@@ -259,6 +274,22 @@
     "discount": "{pct}% de descuento de contado",
     "surcharge": "{pct}% de ajuste por financiamiento",
     "priceOnRequestNote": "Las cifras exactas se cotizan al confirmarse el precio del lote — solicítelo abajo.",
+    "tierTable": {
+      "title": "Precios por categoría",
+      "names": {
+        "premium": "Premium",
+        "media": "Media",
+        "interior": "Interior",
+        "bajio": "Bajío"
+      },
+      "cols": {
+        "tier": "Categoría",
+        "rate": "USD por m²",
+        "cash": "Precio de contado (lote ≈1,500 m²)",
+        "monthly": "Mensualidad a {years} años"
+      },
+      "note": "Los precios por m² aplican a los lotes ofrecidos por M.S.A.V.; el precio exacto de cada lote se calcula sobre su superficie medida. Las mensualidades mostradas corresponden a un lote típico de 1,500 m² después del enganche. Los lotes de otros ejidatarios se ofrecen a precio de lista."
+    },
     "reserveCta": "Apartar este lote",
     "disclaimer": "Las cifras mostradas son ilustrativas y están sujetas a contrato final. Los planes pueden ser ajustados por el vendedor.",
     "close": "Cerrar planes de pago"
