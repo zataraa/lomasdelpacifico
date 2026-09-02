@@ -105,7 +105,7 @@
         "tag": "este proyecto",
         "distance": "30 min",
         "market": "Inversión hacia Cabo",
-        "price": "Desde USD 45,000",
+        "price": "Desde USD 24,500",
         "highlight": true
       }
     ],
@@ -134,7 +134,7 @@
       {
         "zone": "Lomas del Pacífico",
         "tag": "este proyecto",
-        "price": "$30–$100",
+        "price": "$35–$100",
         "highlight": true
       }
     ],
@@ -197,10 +197,9 @@
       "calm": "Entorno interior tranquilo con vistas"
     },
     "priceTierName": {
-      "premium": "Premium",
-      "media": "Media",
-      "interior": "Interior",
-      "bajio": "Bajío"
+      "premium": "Premium · Primera fila",
+      "vistaMar": "Vista al mar",
+      "interior": "Interior"
     },
     "panel": {
       "lotKey": "Clave del lote",
@@ -277,18 +276,17 @@
     "tierTable": {
       "title": "Precios por categoría",
       "names": {
-        "premium": "Premium",
-        "media": "Media",
-        "interior": "Interior",
-        "bajio": "Bajío"
+        "premium": "Premium · Primera fila",
+        "vistaMar": "Vista al mar",
+        "interior": "Interior"
       },
       "cols": {
-        "tier": "Categoría",
+        "tier": "Zona",
         "rate": "USD por m²",
         "cash": "Precio de contado (lote ≈1,500 m²)",
         "monthly": "Mensualidad a {years} años"
       },
-      "note": "Los precios por m² aplican a los lotes ofrecidos por M.S.A.V.; el precio exacto de cada lote se calcula sobre su superficie medida. Las mensualidades mostradas corresponden a un lote típico de 1,500 m² después del enganche. Los lotes de otros ejidatarios se ofrecen a precio de lista."
+      "note": "Los precios por m² aplican a todos los lotes, de los tres ejidatarios; el precio exacto de cada lote se calcula sobre su superficie medida, por lo que varía según el tamaño. Las mensualidades mostradas corresponden a un lote típico de 1,500 m² después del enganche."
     },
     "reserveCta": "Apartar este lote",
     "disclaimer": "Las cifras mostradas son ilustrativas y están sujetas a contrato final. Los planes pueden ser ajustados por el vendedor.",

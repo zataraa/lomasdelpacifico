@@ -12,7 +12,10 @@ import {
 
 const TIERS: Tier[] = ["beachfront_premium", "mid", "inland"];
 const STATUSES: LotStatus[] = ["available", "reserved", "sold"];
-const PRICE_STEPS = [125_000, 150_000, 175_000, 200_000, 250_000];
+// Steps chosen to actually split the inventory under the zone pricing
+// model: ≤40k → the small parcels, ≤55k → all Interior lots, ≤85k → adds
+// Vista al mar, ≤175k → adds Premium (the whole book).
+const PRICE_STEPS = [40_000, 55_000, 85_000, 175_000];
 
 const selectCls =
   "w-full cursor-pointer appearance-none border border-ink/15 bg-ivory-soft px-3 py-2.5 pr-8 text-[13px] text-ink transition-colors hover:border-gold focus:border-gold focus:outline-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%226%22%3E%3Cpath%20d%3D%22M0%200l5%206%205-6z%22%20fill%3D%22%23b9975b%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-[right_0.75rem_center]";
