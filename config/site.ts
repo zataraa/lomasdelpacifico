@@ -12,8 +12,15 @@ export const site = {
   /** Brand name shown in the header, footer and page titles. */
   brandName: "Lomas del Pacífico",
 
-  /** Production URL of the site (used for SEO / social sharing). */
-  url: "https://lomasdelpacifico.example.com", // TODO: replace with the real domain
+  /**
+   * Production URL (used for SEO, sitemap.xml, robots.txt and the
+   * link previews shown when the site is shared on WhatsApp/Facebook).
+   *
+   * Must be the canonical host, with no trailing slash: the apex
+   * lomasdelpacifico.mx answers with a 308 redirect to www, so www is
+   * the address every canonical/OG link should point at.
+   */
+  url: "https://www.lomasdelpacifico.mx",
 
   /* ──────────────────────────────────────────────────────────────────
    * CONTACT — replace every placeholder below with real details.
