@@ -297,14 +297,14 @@
     "title": "La luz vende sola",
     "subtitle": "Escenas de la costa en Elías Calles y del terreno mismo.",
     "captions": {
-      "one": "Atardecer en el Pacífico desde los lotes altos",
-      "two": "La costa en Elías Calles",
-      "three": "El desierto en flor tras las lluvias",
-      "four": "Surf en Playa San Pedrito",
-      "five": "La sierra detrás del desarrollo",
-      "six": "El atardecer sobre Todos Santos"
-    },
-    "placeholderNote": "Imágenes provisionales — fotografía final en producción"
+      "sunset": "Atardecer sobre el Pacífico desde los lotes altos",
+      "bay": "Las lomas descendiendo hacia la bahía",
+      "highway": "El terreno sobre la Carretera Federal 19",
+      "sierra": "La sierra detrás del desarrollo",
+      "valley": "El valle agrícola al oriente",
+      "access": "Acceso directo desde la carretera",
+      "panorama": "Vista de 360° desde el corazón del desarrollo"
+    }
   },
   "contact": {
     "eyebrow": "Contacto",

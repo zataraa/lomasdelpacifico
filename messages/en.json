@@ -297,14 +297,14 @@
     "title": "The light does the selling",
     "subtitle": "Scenes from the coast at Elías Calles and the land itself.",
     "captions": {
-      "one": "Pacific sunset from the upper lots",
-      "two": "The coastline at Elías Calles",
-      "three": "Desert bloom after summer rain",
-      "four": "Surf at Playa San Pedrito",
-      "five": "The sierra behind the development",
-      "six": "Evening over Todos Santos"
-    },
-    "placeholderNote": "Placeholder imagery — final photography in production"
+      "sunset": "Sunset over the Pacific from the upper lots",
+      "bay": "The hills falling away toward the bay",
+      "highway": "The land above Federal Highway 19",
+      "sierra": "The sierra behind the development",
+      "valley": "The farming valley to the east",
+      "access": "Direct access from the highway",
+      "panorama": "360° view from the heart of the development"
+    }
   },
   "contact": {
     "eyebrow": "Contact",

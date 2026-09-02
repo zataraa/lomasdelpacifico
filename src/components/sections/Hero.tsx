@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import {
   motion,
   useReducedMotion,
@@ -12,14 +12,26 @@ import { useTranslations } from "next-intl";
 import { ButtonLink } from "@/components/ui/Button";
 
 /**
- * Cinematic hero. The backdrop is a layered CSS "dusk over the
- * Pacific" gradient — swap it for real photography or video by
- * replacing the .hero-backdrop element (see README).
+ * Cinematic hero. The backdrop is a muted, looping drone flight along
+ * the coast (public/video/hero.mp4, exported from the original 4K60
+ * footage). To swap it, replace that file and its poster — the poster
+ * should be the clip's own first frame so playback starts seamlessly.
  */
 export function Hero() {
   const t = useTranslations("hero");
   const ref = useRef<HTMLElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const reduceMotion = useReducedMotion();
+
+  // Honour prefers-reduced-motion: hold on the poster frame instead of
+  // looping the flight. Removing `autoplay` alone would not stop a clip
+  // that already began playing, so pause it explicitly.
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    if (reduceMotion) video.pause();
+    else void video.play().catch(() => {});
+  }, [reduceMotion]);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -44,34 +56,34 @@ export function Hero() {
       id="top"
       className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden bg-night"
     >
-      {/* Backdrop — replace with <Image>/<video> when real media arrives */}
+      {/* Backdrop — aerial flight along the coast, drifting on scroll.
+          The poster is the clip's own first frame, so there is no jump
+          when playback starts (and it is what shows when the visitor
+          prefers reduced motion or the video cannot load). */}
       <motion.div
         aria-hidden
         style={reduceMotion ? undefined : { y: backdropY }}
         className="absolute inset-[-12%]"
       >
-        <div
-          className="h-full w-full"
-          style={{
-            background: `
-              radial-gradient(120% 60% at 75% 12%, rgba(212,188,139,0.32) 0%, transparent 55%),
-              linear-gradient(180deg, #2b3442 0%, #3d4a57 30%, #6f7a82 52%, #b9975b33 60%, #1f2a35 62%, #16202b 100%)
-            `,
-          }}
-        />
-        {/* Horizon shimmer */}
-        <div
-          className="absolute inset-x-0 top-[52%] h-px"
-          style={{
-            background:
-              "linear-gradient(to right, transparent, rgba(212,188,139,0.8), transparent)",
-          }}
-        />
+        <video
+          ref={videoRef}
+          className="h-full w-full object-cover"
+          poster="/video/hero-poster.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+        >
+          <source src="/video/hero.mp4" type="video/mp4" />
+        </video>
       </motion.div>
       <div aria-hidden className="texture-grain absolute inset-0" />
+      {/* Scrim: the frame is a bright hazy sunset, so the headline needs a
+          real veil over it, not just darkened edges. */}
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-t from-night/85 via-transparent to-night/40"
+        className="absolute inset-0 bg-gradient-to-t from-night/90 via-night/45 to-night/60"
       />
 
       <motion.div
