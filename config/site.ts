@@ -27,10 +27,10 @@ export const site = {
    * ────────────────────────────────────────────────────────────────── */
   contact: {
     /** WhatsApp number in international format, digits only (52 = Mexico). */
-    whatsapp: "5216120000000", // TODO: real WhatsApp number
+    whatsapp: "526647587222",
     /** Phone number as displayed to visitors. */
-    phoneDisplay: "+52 612 000 0000", // TODO: real phone
-    email: "info@lomasdelpacifico.example.com", // TODO: real email
+    phoneDisplay: "+52 664 758 7222",
+    email: "info@lomasdelpacifico.mx",
   },
 
   /* Social profiles. Leave the value as "" to hide that icon. */
