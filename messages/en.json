@@ -304,7 +304,8 @@
       "valley": "The farming valley to the east",
       "access": "Direct access from the highway",
       "panorama": "360° view from the heart of the development"
-    }
+    },
+    "panoramaHint": "Drag to look around"
   },
   "contact": {
     "eyebrow": "Contact",

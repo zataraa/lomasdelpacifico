@@ -304,7 +304,8 @@
       "valley": "El valle agrícola al oriente",
       "access": "Acceso directo desde la carretera",
       "panorama": "Vista de 360° desde el corazón del desarrollo"
-    }
+    },
+    "panoramaHint": "Arrastre para mirar alrededor"
   },
   "contact": {
     "eyebrow": "Contacto",

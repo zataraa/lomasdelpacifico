@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
+import { Panorama360 } from "@/components/gallery/Panorama360";
 
 /*
  * Real aerial photography of the development (drone, August 2026),
@@ -57,17 +58,18 @@ export function Gallery() {
           ))}
         </div>
 
-        {/* 360° panorama — the whole site in one frame */}
+        {/* 360° panorama — drag to look around, drifts on its own */}
         <Reveal delay={0.1} className="mt-4">
-          <figure className="group relative aspect-[2/1] w-full overflow-hidden border border-gold/15 md:aspect-[3/1]">
-            <Image
-              src="/gallery/panorama-360.jpg"
+          {/* Taller than the flat tiles: a 3:1 letterbox leaves too little
+              sky and ground to actually look around in. */}
+          <figure className="relative aspect-[4/3] w-full overflow-hidden border border-gold/15 sm:aspect-[16/9] lg:aspect-[2/1]">
+            <Panorama360
+              src="/gallery/panorama-360-sphere.jpg"
+              flatSrc="/gallery/panorama-360.jpg"
               alt={t("captions.panorama")}
-              fill
-              sizes="100vw"
-              className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02] motion-reduce:transition-none"
+              hint={t("panoramaHint")}
             />
-            <figcaption className={captionCls}>
+            <figcaption className={`${captionCls} pointer-events-none`}>
               <p className="font-display text-base text-ivory italic">
                 {t("captions.panorama")}
               </p>
