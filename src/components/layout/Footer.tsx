@@ -78,12 +78,15 @@ export function Footer() {
                 {site.contact.email}
               </a>
             </li>
+            {/* No phone number by design — enquiries go to WhatsApp. */}
             <li>
               <a
-                href={`tel:${site.contact.phoneDisplay.replace(/\s/g, "")}`}
+                href={`https://wa.me/${site.contact.whatsapp}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="transition-colors hover:text-gold"
               >
-                {site.contact.phoneDisplay}
+                {t("whatsapp")}
               </a>
             </li>
           </ul>

@@ -104,8 +104,8 @@ export function Contact() {
             </Reveal>
 
             <Reveal delay={0.2}>
+              {/* Email only — the phone is intentionally not published. */}
               <div className="mt-10 space-y-2 text-sm text-ivory/60">
-                <p>{site.contact.phoneDisplay}</p>
                 <p>{site.contact.email}</p>
               </div>
             </Reveal>

@@ -26,10 +26,18 @@ export const site = {
    * CONTACT — replace every placeholder below with real details.
    * ────────────────────────────────────────────────────────────────── */
   contact: {
-    /** WhatsApp number in international format, digits only (52 = Mexico). */
-    whatsapp: "526647587222",
-    /** Phone number as displayed to visitors. */
-    phoneDisplay: "+52 664 758 7222",
+    /**
+     * WhatsApp number, digits only. Mexican mobiles need the 1 after the
+     * 52 country code (521 + 10 digits) for wa.me links to open a chat.
+     */
+    whatsapp: "5216647587222",
+    /**
+     * The phone number is deliberately NOT shown anywhere on the site —
+     * the client wants enquiries to arrive on WhatsApp, not as calls.
+     * Kept here only as the source for the WhatsApp number above; adding
+     * it back to the UI means re-adding it to the footer and Contact.
+     */
+    phoneInternal: "+52 664 758 7222",
     email: "info@lomasdelpacifico.mx",
   },
 
