@@ -63,9 +63,42 @@ automatically from each lot's price.
 
 ### 4. Contact details, WhatsApp, exchange rate — [config/site.ts](config/site.ts)
 
-Phone, email, WhatsApp number (digits only, starting with country code 52),
-social links, the USD→MXN rate, and the production domain. Every placeholder
-is marked with `TODO`.
+Email, WhatsApp number, social links, the USD→MXN rate, and the production
+domain.
+
+Two things worth knowing here:
+
+- **The WhatsApp number needs the `1` after the country code** — `521` plus
+  the 10 digits. Without it `wa.me` links do not open a chat for Mexican
+  mobiles.
+- **The phone number is deliberately not shown anywhere.** The client wants
+  enquiries on WhatsApp rather than as calls, so it lives in `phoneInternal`
+  purely as the source of the WhatsApp number. Publishing it again means
+  adding it back to the footer and the contact section by hand.
+
+### 5. Making the contact form deliver — environment variables
+
+The form emails each enquiry to the address in `contact.email`, sending it
+through the project's own IONOS mailbox over SMTP. It needs two variables,
+set in **Vercel → Settings → Environment Variables** (and in `.env.local`
+for local work — see [.env.example](.env.example)):
+
+| Key | Value |
+|---|---|
+| `SMTP_USER` | `info@lomasdelpacifico.mx` |
+| `SMTP_PASSWORD` | that mailbox's IONOS password (mark it sensitive) |
+
+Two traps to avoid:
+
+1. **Tick all three environments** (Production, Preview, Development). A
+   variable set only on Preview will not reach the live site.
+2. **Redeploy after saving.** Vercel applies environment variables when a
+   deployment is built, so the site that is already live keeps running
+   without them until you redeploy it.
+
+Until both variables reach the running deployment the form answers with a
+503 and the visitor is told to write on WhatsApp — deliberately, so an
+enquiry is never reported as sent and then silently dropped.
 
 ---
 
