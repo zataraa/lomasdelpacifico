@@ -13,6 +13,7 @@ import { PaymentPlans } from "@/components/sections/PaymentPlans";
 import { Gallery } from "@/components/sections/Gallery";
 import { Contact } from "@/components/sections/Contact";
 import { PaymentPlansModal } from "@/components/plans/PaymentPlansModal";
+import { WhatsAppFab } from "@/components/layout/WhatsAppFab";
 
 export default function HomePage({
   params,
@@ -43,6 +44,7 @@ function PageContent() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppFab />
       <PaymentPlansModal />
     </>
   );
